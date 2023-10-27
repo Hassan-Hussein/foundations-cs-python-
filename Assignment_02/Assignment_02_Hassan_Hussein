@@ -1,1 +1,39 @@
-#test
+choice = int(input("""
+1. Count Digits
+2. Find Max
+3.Count Tags
+4. Exit
+
+write the number of you choice: """))
+
+# Choice 1:
+if choice == 1:
+    def counting(number):
+        
+        if -9 <= number <= 9 :
+            return 1
+        else:
+            return 1+counting(number // 10)
+        
+            
+    number = int(input("enter the number: "))
+    print(counting(number))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# choice 2:      
+elif choice == 2:
+    def maxNumber(lst):
+        if len(lst) == 1:
+            return lst[0]
+        else:
+            rest = maxNumber(lst[1:])
+            if lst[0] > rest:
+                return lst[0]
+            else:
+                return rest        
+
+lst = [int(x) for x in input("Enter numbers separated by spaces: ").split()]
+print(maxNumber(lst))        
+
+#------------------------------------------------------------------------------------------------------------------- 
