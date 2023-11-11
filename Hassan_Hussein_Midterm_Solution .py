@@ -75,13 +75,14 @@ while True:
         for tab in tabs_List:
             print(tab['Title'])
 
-    # elif choice == "5":
-    #     choice5 = int(input("in which tab you want to enter a tab : "))
-    #     tabs_List[choice5 - 1].append({
-    #         "Title" : input("Tab Title : "),
-    #         "URL" : input("Tab URL : ")
-    #         })
+    elif choice == "5":
+        choice5 = int(input("in which tab you want to enter a tab : "))
+        tabs_List[choice5 - 1]["Nested Tab"]={
+            "Title" : input("Tab Title : "),
+            "URL" : input("Tab URL : ")
+            }
         
+
 
 
 
