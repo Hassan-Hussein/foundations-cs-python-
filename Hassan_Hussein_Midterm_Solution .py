@@ -81,7 +81,8 @@ while True:
             "Title" : input("Tab Title : "),
             "URL" : input("Tab URL : ")
             }
-        
+    elif choice == "6":
+        tabs_List.clear()    
 
 
 
